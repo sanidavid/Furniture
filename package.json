@@ -1,0 +1,15 @@
+{
+  "name": "furniture-design",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass main.scss style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.79.5"
+  }
+}

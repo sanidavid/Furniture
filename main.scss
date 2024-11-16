@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Telex&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Jacquarda+Bastarda+9&family=Lilita+One&family=Megrim&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+HK:wght@200..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Righteous&family=Whisper&display=swap');
+
+// Varriables
+$danger: rgb(255, 94, 0);
+$header-text-color: $danger; // Assuming $danger is defined elsewhere
+$header-font-family: "Viga", sans-serif;
+$header-font-weight: 400;
+$header-font-style: normal;
+$header-font-size: 3.2rem;
+$background-color: #ede6e6;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+button{
+    background-color:  $danger !important;
+}
+
+
+.container{
+
+    & .heading{
+        color: $danger !important;
+        font-family: "Viga", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size:3.3rem !important;
+    }
+
+}
+
+#categories{
+    // padding-top: 30px;
+
+& .categorie-text h3{
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+& .categorie-text h3::after{
+    content: '';
+    display: block;
+    background-color: $danger;
+    margin: 10px auto;
+    width: 100px;
+    height: 3px;
+}
+
+& .chair-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background-color: #ede6e6;
+    // width: 380px;
+    height: 200px;
+}
+
+& .text-content{
+    margin-left: 15px;
+}
+
+& .text-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+& .text-content p {
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+& .image-content img {
+    width: 134px;
+    border-radius: 10px;
+}
+}
+// End of categories
+
+
+// Services section
+#services {
+    & .service-box {
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        background-color: #ede6e6;
+        margin: 0px auto;
+        height: 240px;
+    }
+
+    & .service-text h3 {
+        font-family: "Viga", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    & .service-text h3::after {
+        content: '';
+        background-color: $danger !important;
+        margin: 10px auto;
+        width: 70px;
+        height: 3px;
+        display: block;
+    }
+
+    & .service-text p {
+        color: #888;
+        margin-bottom: 1rem;
+    }
+
+    & .image-content {
+        display: flex;               /* Add flexbox */
+        justify-content: center;      /* Center horizontally */
+        align-items: center;          /* Center vertically (if needed) */
+        margin-top: 10px;             /* Optional margin */
+    }
+
+    & .image-content img {
+        display: block;               /* Ensures image takes up only necessary space */
+        margin: auto;                 /* Backup centering if flex fails */
+    }
+}
+
+// End of service section
+
+
+// Product Section
+#products{
+
+     & .product-card{
+        background-color: #ede6e6;
+        border: 1px solid #e5e5e5;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    & .product-card h5, h6{
+        margin-left: 20px;
+        padding-top: 5px;
+    }
+
+    & .product-text h3{
+        font-family: "Viga", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    & .product-text h3::after{
+        content: '';
+        background-color: $danger;
+        height: 3px;
+        width: 170px;
+        margin: 10px auto;
+        display: block;
+    }
+}
+// End of product section
+
+
+// Testimonies section
+#testimonies{
+    // padding-top: 30px;
+
+   &   .profile-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $background-color;
+        border-radius: 20px;
+        height: 220px;
+    }
+    
+    & .testimonies-heading h3{
+        font-family: "Viga", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    & .testimonies-heading h3::after{
+        content: '';
+        background-color: $danger;
+        display: block;
+        height: 3px;
+        width: 80px;
+        margin: 10px auto;
+    }
+
+ &   .profile-image {
+        margin-bottom: 0px;
+        transform: translate(150px, -40px);
+    }
+    
+ &   .profile-image img {
+        width: 100px;
+        border-radius: 50%;
+        border: 13px solid white;
+    }
+    
+  &  .profile-text {
+        margin-top: -52px; /* Moves the text upwards to align with the image */
+        text-align: center;
+    }
+    
+ &   .profile-details h5, .profile-details p {
+        margin: 0;
+    }
+}
+// End of testimonies section
+
+// About us section
+
+.about-us{
+    // padding-top: 70px;
+
+    & .about-heading h3{
+        font-family: "Viga", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    & .about-heading h3::after{
+        content: '';
+        background-color: $danger;
+        display: block;
+        height: 3px;
+        width: 80px;
+        margin: 10px auto;
+    }
+
+    & .about-text{
+        margin-top: 10px;
+    }
+
+    & .about-text h2{
+        font-family: "Telex", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    & .about-footer{
+        line-height: 18px;
+        padding-top: 10px;
+    }
+
+    & .about-footer .signature{
+        font-family: "Whisper", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+    }
+}
+
+.specialities{
+    & .specialities-heading h3{
+        font-family: "Viga", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+    & .specialities-heading h3::after{
+        content: "";
+        display: block;
+        background-color: $danger;
+        height: 3px;
+        width: 130px;
+        margin: 10px auto;
+    }
+
+    & .specialities-content h3{
+        font-family: "Telex", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+   & .specialities-content .more-content{
+        display: none;
+    }
+
+    & .specialities-content .more-write-up{
+        display: none;
+    }
+
+    // & .specialities-content .btn-read-more{
+    //     border: 1px solid $danger; 
+    // }
+}
+
+.ratings{
+
+    & .ratings-heading h3{
+        font-family: "Viga", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    & .ratings-heading h3::after{
+        content: '';
+        display: block;
+        height: 3px;
+        width: 80px;
+        background-color: $danger;
+        margin: 10px auto;
+    }
+
+    & .progress{
+        height: 20px;
+        border-radius: 20px;
+    }
+
+    & .progress-bar{
+        border-radius: 20px;
+    }
+
+& .counter-content{
+    padding-top: 90px;
+    }
+
+    & .counter-text{
+        margin-top: 20px;
+    }   
+
+    & .counter-text h2{
+        font-family: monospace;
+        font-weight: bolder;
+        font-size: 38px;
+    }
+}
+
+.contact{
+
+    & h3{
+        font-family: "Viga", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    & h3::after{
+        display: block;
+        content: '';
+        height: 3px;
+        width: 62px;
+        background-color: $danger !important;
+        margin: 10px auto;
+    }
+
+    & .contact-top{
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        gap: 10px; 
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    & .contact-top img{
+        margin-bottom: 10px;
+    }
+
+    & .contact-content{
+        padding-top: 20px;
+        background-color: $background-color;
+        height: 140px;
+        border-radius: 10px;
+    }
+
+    & .contact-text{
+        line-height: 15px;
+        margin-top: 10px;
+    }
+
+    & .contact-form .form-group{
+        margin-bottom: 30px;
+    }
+
+    & .contact-form .form-group input{
+        background-color:#fffdfd;
+        height: 50px;
+    }
+
+    & .contact-form .form-group textarea:focus{
+        outline: none !important;
+        border: 2px solid $danger;
+        box-shadow: none;
+    }
+    & .contact-form .form-group input:focus{
+        outline: none !important;
+        border: 2px solid $danger;
+        box-shadow: none;
+    }
+}
+
+.objective{
+    & .social{
+        display: flex;
+        gap: 12px;
+    }
+
+    & .social a{
+        color: black;
+        font-size: 1.5rem;
+    }
+}
+
+.footer{
+    margin-top: 30px;
+
+    & .links ul{
+        list-style: none;
+    }
+
+    & .links ul li a{
+        color: black;
+        text-decoration: none;
+        
+    }
+}
+
+.copyright{
+    margin-top: 10px;
+}
+
+.copyright a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.map-container {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    padding-bottom: 56.25%; /* This maintains a 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+@media (max-width: 480px){
+    // Mobile Phone
+   #services{
+        display: flex !important;
+        flex-direction: column;   
+    }
+    .categories{
+        display: flex !important;
+        flex-direction:column !important;
+    }
+
+    .about-us img{
+        width: 400px;
+    }
+   
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    // Mobile Phone(Landscape Mode)
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    // Tablet(Portrait Mode) like  
+
+ 
+}
+
+@media (min-width: 1201px) and (max-width: 1600px){
+    // Laptops
+    .banner-text{
+        position: relative;
+        top: 30px;
+    }
+
+}
+
+
+@media(min-width: 1601px){
+    //Large Desktops
+    
+}
